@@ -131,7 +131,7 @@ Pedagogía
 Didáctica
 Tecnología de los Alimentos
 Historia del Pensamiento
-´´´
+```
 
 ##15
 ```xml
@@ -143,14 +143,14 @@ Ingeniería del Software
 Tecnología de los Alimentos
 Bases de Datos
 Historia del Pensamiento
-´´´
+```
 ##16
 ```xml
 /universidad/alumnos/alumno[last()]/estudios/carrera/@codigo
 ```
 ```xml
 codigo="c01"
-´´´
+```
 ##17
 ```xml
 /universidad/alumnos/alumno[sexo = "Mujer"]/estudios/carrera/@codigo
@@ -158,7 +158,7 @@ codigo="c01"
 ```xml
 codigo="c02"
 codigo="c01"
-´´´
+```
 ##18
 ```xml
 /universidad/alumnos/alumno[estudios[asignaturas[asignatura[@codigo="a02"]]]]/nombre/text()
@@ -167,7 +167,7 @@ codigo="c01"
 Luisa
 Fernando
 María
-´´´
+```
 ##19
 ```xml
 /universidad/alumnos/alumno[estudios[asignaturas[asignatura]]]/estudios/carrera/@codigo
@@ -177,7 +177,7 @@ codigo="c01"
 codigo="c02"
 codigo="c02"
 codigo="c01"
-´´´
+```
 ##20
 ```xml
 /universidad/alumnos/alumno[sexo="Hombre"]/*[self::apellido1 or self::apellido2]/text()
@@ -187,14 +187,14 @@ Rivas
 Santos
 Pérez
 Romero
-´´´
+```
 ##21
 ```xml
 //carrera[@id=//alumno[nombre="Víctor Manuel"]/estudios/carrera/@codigo]/nombre/text()
 ```
 ```xml
 I.T. Informática
-´´´
+```
 ##22
 ```xml
 //asignatura[@id=//alumno[nombre="Luisa"]/estudios/asignaturas/asignatura/@codigo]/nombre/text()
@@ -202,7 +202,7 @@ I.T. Informática
 ```xml
 Ofimática
 Ingeniería del Software
-´´´
+```
 ##23
 ```xml
 //alumno[estudios/asignaturas/asignatura/@codigo=//asignatura[nombre="Ingeniería del Software"]/@id]/apellido1/text()
@@ -211,14 +211,14 @@ Ingeniería del Software
 Pérez
 Pérez
 Avalón
-´´´
+```
 ##24
 ```xml
 //carrera[@id=//alumno[estudios/asignaturas/asignatura/@codigo=//asignatura[nombre="Tecnología de los Alimentos"]/@id]/estudios/carrera/@codigo]/nombre/text()
 ```
 ```xml
 I.T. Informática
-´´´
+```
 
 ##25
 ```xml
@@ -229,7 +229,7 @@ Víctor Manuel
 Luisa
 Fernando
 María
-´´´
+```
 
 ##26
 ```xml
@@ -237,7 +237,7 @@ María
 ```
 ```xml
 Víctor Manuel
-´´´
+```
 
 ##27
 ```xml
@@ -246,4 +246,4 @@ Víctor Manuel
 ```xml
 Luisa
 Fernando
-´´´
+```
